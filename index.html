@@ -8,10 +8,37 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            background-color: #f4f4f4; /* Fondo para contraste */
+        }
+
+        img {
+            max-width: 100%; /* Escala hasta el ancho máximo del contenedor */
+            height: auto; /* Mantiene la proporción original */
+            display: block; /* Elimina el espacio inferior de imágenes */
+        }
+
+        @media (max-width: 768px) { /* Para pantallas medianas (tablets) */
+            img {
+                max-width: 80%; /* Reduce el tamaño un poco */
+            }
+        }
+
+        @media (max-width: 480px) { /* Para pantallas pequeñas (móviles) */
+            img {
+                max-width: 70%; /* Reduce aún más el tamaño */
+            }
         }
     </style>
 </head>
 <body>
-Hello World.
-Hello Coriolis.
+
   <img src="coriolis.webp" alt="Logo">
+
+</body>
+</html>
